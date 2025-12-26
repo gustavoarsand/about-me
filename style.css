@@ -141,3 +141,46 @@ body.light .project { background: var(--card); }
   .hero-grid { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
 }
+
+.nav.nav-icons{
+  width: min(1050px, calc(100% - 40px));
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 0 14px;
+}
+
+.nav-item{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #e8eaf1;
+  background: rgba(0,0,128,0.18);          /* azul marinho */
+  border: 1px solid rgba(0,0,128,0.35);
+  transition: transform .12s ease, background .12s ease, color .12s ease, border-color .12s ease;
+}
+
+.nav-item .nav-ico{
+  font-size: 1.05em;
+  line-height: 1;
+}
+
+.nav-item:hover{
+  background: #ffffff;
+  color: #0b0c10;
+  border-color: rgba(255,255,255,0.9);
+  transform: translateY(-1px);
+}
+
+.nav-item:active{
+  transform: translateY(0px);
+}
+
+.nav-item:focus-visible{
+  outline: 3px solid rgba(0,118,206,0.35);
+  outline-offset: 3px;
+}
